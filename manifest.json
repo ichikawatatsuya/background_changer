@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+
+		"name": "Back ground color changer",
+		"description": "眩しい白色背景を灰色に変更します",
+		"version": "1.0",
+
+		"browser_action": {
+			"default_icon": "icon.png"
+		},
+		"content_scripts": [
+		{
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+				],
+			"js": ["jquery.min.js", "main.js"]
+		}
+	]
+}
